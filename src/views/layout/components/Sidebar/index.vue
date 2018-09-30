@@ -9,6 +9,9 @@
       text-color="#bfcbd9"
       active-text-color="#409EFF"
     >
+      <router-link class="inlineBlock" to="/">
+        <img src="@/assets/tbank/logo_tbank.png">
+      </router-link>
       <sidebar-item v-for="route in routes" :key="route.name" :item="route" :base-path="route.path"/>
     </el-menu>
   </el-scrollbar>
@@ -33,3 +36,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  img {
+    width:100%;
+    height:50px;
+    background-color:white;
+  }
+</style>
